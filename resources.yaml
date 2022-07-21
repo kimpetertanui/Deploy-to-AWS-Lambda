@@ -31,12 +31,12 @@ spec:
       valueFrom: 
         secretKeyRef: 
           name: awscreds
-          key: AKIARFRM3OIVDLXSUGEP
+          key: aws_access_key_id
     - name: AWS_SECRET_ACCESS_KEY
       valueFrom: 
         secretKeyRef: 
           name: awscreds
-          key: gY01WvMbLWN2IQCUp4l6b0QtB4J/uM6OpyaSbeJb
+          key: aws_secret_access_key
 ---
 apiVersion: tekton.dev/v1alpha1
 kind: Task

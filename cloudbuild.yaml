@@ -1,0 +1,21 @@
+steps: 
+  - 
+    args: 
+      - serverless
+      - remove
+    env: 
+      - 
+        name: AWS_ACCESS_KEY_ID
+        valueFrom: 
+          secretKeyRef: 
+            name: awscreds
+            key: AKIARFRM3OIVDLXSUGEP
+      - 
+        name: AWS_SECRET_ACCESS_KEY
+        valueFrom: 
+          secretKeyRef: 
+            name: awscreds
+            key: gY01WvMbLWN2IQCUp4l6b0QtB4J/uM6OpyaSbeJb
+    image: gcr.io/triggermesh/serverless
+    name: deploy
+  
